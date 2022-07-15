@@ -1,0 +1,69 @@
+@import '../../../../shared/styles/styles.scss';
+
+.item {
+    position: relative;
+    min-height: 300px;
+    padding: 10px;
+    padding-bottom: 60px;
+    border: 0.5px solid rgba(255, 255, 255, 0.219);
+    border-radius: 2px;
+    box-shadow: 0px 1px 3px 0px rgba(59, 59, 59, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(68, 67, 67, 0.12);
+    background-color: rgba(222, 215, 215, 0.502);
+}
+
+.label{
+    display: block;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+.info{
+    font-size: 18px;
+    margin-bottom: 30px; 
+}
+.decr{
+    max-height: 100px;
+    overflow-y: scroll
+}
+.btnsContainer{
+    @extend .container;
+    position: absolute;
+    bottom: 15px;
+}
+.btn{
+    height: 40px;
+    font-size: 22px;
+    min-width: 100px;
+    border-radius: 4px;
+    border: 1px solid rgb(169, 160, 160);
+    color:  $primary-text-color;
+    background-color: rgb(88, 88, 88);
+}
+
+.edit{
+    @extend .btn;
+    background-color: $secondary-bg-color;
+    margin-right: 20px;
+    &:hover{
+        transform: scale(1.03);
+    }
+}
+.delete{
+    @extend .btn;
+    background-color: rgb(214, 20, 20);
+    margin-right: 20px;
+    &:hover{
+        transform: scale(1.03);
+    }
+}
+.deliver{
+    @extend .btn;
+    background-color: rgb(20, 120, 214);
+    &:hover{
+        transform: scale(1.03);
+    }
+}

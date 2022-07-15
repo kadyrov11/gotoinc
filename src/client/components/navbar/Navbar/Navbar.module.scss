@@ -1,0 +1,19 @@
+@import "../../../../shared/styles/styles.scss";
+
+.navbar{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    background: $primary-bg-color;
+    width: 100%;
+    border-radius: 0px 0px 10px 10px;
+}
+.logo{
+    color: $primary-text-color;
+    font-size: 30px;
+    margin: 0 60px;
+    
+}

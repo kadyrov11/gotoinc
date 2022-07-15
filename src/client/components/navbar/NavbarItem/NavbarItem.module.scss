@@ -1,0 +1,20 @@
+@import "../../../../shared/styles/styles.scss";
+
+.nav{
+    &Item{
+        &:not(:last-child) {
+            margin-right: 15px;
+        }
+    };
+    &Link{
+        display: inline-block;
+        font-size: 22px;
+        padding: 20px 0;
+        color: $primary-text-color;
+    }
+}
+
+.active{
+    @extend .navLink;
+    color: $secondary-bg-color;
+}

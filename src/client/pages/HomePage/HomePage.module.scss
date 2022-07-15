@@ -1,0 +1,60 @@
+@import "../../../shared/styles/styles.scss";
+
+.welcome{
+    &Container{
+        display: flex;
+        justify-content: center;
+    };
+    &Circle{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+
+        height: 600px;
+        width: 600px;
+        padding: 20px;
+        border-radius: 50%;
+        box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.267);
+
+        background-color: $secondary-bg-color;
+
+    };
+    &Text{
+        font-size: 40px;
+        color: $primary-text-color;
+    }
+}
+.parcel{
+    &Btn{
+    display: inline-block;
+
+    height: 60px;
+
+    font-size: 20px;
+
+    padding: 0 20px;
+    margin-top: 60px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+
+    cursor: pointer;
+
+    color: $primary-text-color;
+    background: rgba(219, 194, 29, 0.781);
+
+
+    &:hover{
+        box-shadow: 3px 2px 4px rgba(79, 78, 78, 0.237);
+    }
+    &:not(:last-child){
+        margin-right: 40px;
+    }
+    };
+    &Link{
+        color: inherit;
+        padding: 10px;
+    }
+}

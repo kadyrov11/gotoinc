@@ -1,0 +1,110 @@
+@import "../../../../shared/styles/styles.scss";
+
+.defaultStyle{
+    
+    margin-bottom: 30px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    box-shadow: 2px 1px 1px  rgba(85, 82, 82, 0.58);
+    &:focus{
+        box-shadow: 3px 2px 2px rgba(19, 112, 224, 0.753);
+        outline: none;
+    };    
+}
+.form{
+    padding: 10px;
+    overflow-y: scroll;
+}
+
+.title{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+
+}
+
+.input{
+    display: block;
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    
+    @extend .defaultStyle;
+    
+    &Label{
+        position: relative;
+        display: block;
+
+        font-size: 25px;
+
+        margin-bottom: 10px;
+    }
+}
+
+.select{
+    display: block;
+    width: 100%;
+    height: 30px;
+
+    font-size: 18px;
+
+    margin-top: 10px;
+
+    @extend .defaultStyle;
+}
+.options{
+    font-size: 15px;
+}
+
+.date{
+    display: block;
+    width: 70%;
+    height: 30px;
+
+    font-size: 15px;
+
+    margin-top: 10px ;
+
+    
+    @extend .defaultStyle;
+}
+
+.textarea{
+    display: block;
+    resize: none;
+    width: 100%;
+    height: 100px;
+    overflow-y: scroll;
+
+    font-size: 15px;
+
+    margin-top: 10px;
+
+    @extend .defaultStyle;
+}
+.submitBtn{
+    display: block;
+
+    width: 150px;
+    height: 40px;
+
+    font-size: 18px;
+
+    @extend .defaultStyle;
+
+    margin: 0 auto;
+
+    color: $primary-text-color;
+    background-color: $secondary-bg-color;
+
+    &:hover{
+        box-shadow: 2px 2px 3px  rgba(52, 49, 49, 0.626);
+    }
+}
+
+.errorMessage{
+    position: absolute;
+    bottom: -25px;
+    font-size: 15px;
+    color: red;
+}
